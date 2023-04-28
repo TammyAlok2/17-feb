@@ -6,11 +6,12 @@ import Login from './Login'
 import Shortcircuit from './Shortcircuit'
 import UseEffect1 from './UseEffect1'
 import UseEffect2 from './UseEffect2'
+import UseEffectproject from './UseEffectproject'
 const App = () => {
   return (
     <>
   
-<UseEffect2/>
+<UseEffectproject/>
     </>
   )
 }
