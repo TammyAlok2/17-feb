@@ -9,7 +9,7 @@ const Menu= [
     {
         id:'1',
         name:"Panner Roti",
-        description:"This is the one of the most favorite south indian Dish",
+        description:"This is the one of the most favorite south indian Dish thisi s forh te kdjklfjsdklf",
         price:"250",
         category:'Lunch'
     },
