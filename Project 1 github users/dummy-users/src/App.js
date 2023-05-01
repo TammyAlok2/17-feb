@@ -1,10 +1,10 @@
 import React from 'react'
+import UseeffectArray from './UseeffectArray'
 
 const App = () => {
   return (
     <div>
-      this is me alok tamrakar 
-      love you ankita started the project of github users 
+      <UseeffectArray/>
     </div>
   )
 }
