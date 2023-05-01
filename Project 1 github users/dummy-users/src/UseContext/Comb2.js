@@ -6,7 +6,6 @@ const Comb2 = () => {
     <div>
       Ankita <Comb3/>
 this is me alok here is some symptoms for all that stuff
-
     </div>
   )
 }

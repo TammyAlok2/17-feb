@@ -1,6 +1,7 @@
 import React , {useEffect, useState} from 'react'
 import Menu from './Menu.js'
 
+
 const Filter = () => {
 const [items, setItems]=useState(Menu);
 
@@ -44,9 +45,9 @@ const catMenu =()=>{
      const {id,name,category,description}=curElem;
         return(
             <>
-             <div className='name'>{curElem.name}</div>
+             <div className='name'>{curElem.name} </div>
     <div className="description">{curElem.category}</div>
-    <div className="price">{curElem.price}</div>
+    <div className="price">{curElem.price} </div>
             </>
         )
     })
