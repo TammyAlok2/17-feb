@@ -1,0 +1,865 @@
+<html>
+<head>
+ <title></title>
+ <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+
+<!-- MDB -->
+<link
+
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+ <link rel="stylesheet" type="text/css" href="navbar.css">
+ <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+*{
+margin: 0; padding: 0;
+box-sizing: border-box;
+font-family: 'Josefin Sans', sans-serif;
+box-sizing: border-box;
+outline: none;
+border: none;
+text-transform: capitalize;
+transition: all .2s ease-out;
+text-decoration: none;
+}
+:root{
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22,160,133,.2);
+    --text-shadow:.4rem .4rem 0 rgba(0,0,0,0.2);
+    --border: .2rem solid black ;
+}
+
+header{
+ width: 100%;
+ height: 100vh;
+ background-image: url('bg.png');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+
+}
+
+.mainheader{
+ width: 100%;
+ height: 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.mainheader .logo img{
+ width: 250px; height: 70px;
+ padding-left: 60px;
+}
+
+.mainheader nav{
+ width: 450px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.mainheader nav a{
+ text-decoration: none;
+ color: black;
+ text-transform: uppercase;
+}
+
+.menubtn{
+ margin-right: 60px;
+}
+.mainheader button{
+ padding: 10px 45px;
+ text-align: center;
+ font-size: 14px;
+ color: #fff;
+ border: none;
+ background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+ border-radius: 10px;
+}
+
+
+main{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+main .right-sec{
+ padding-right: 70px;
+}
+
+main .left-sec{
+ padding-left: 100px;
+}
+
+.left-sec h2{
+ font-size: 20px;
+ text-transform: capitalize;
+ font-weight: lighter;
+ color: #242424;
+ margin-top: 100px;
+}
+
+.left-sec h1{
+ font-size: 55px;
+ text-transform: capitalize;
+ font-weight: 700;
+ margin: 15px 0;
+}
+
+.left-sec{
+    
+}
+.left-sec p{
+ margin-bottom: 20px;
+ word-spacing: 2px;
+ font-size: large;
+ font-weight: bold;
+ 
+}
+
+.left-sec button{
+ padding: 15px 45px;
+ text-align: center;
+ font-size: 14px;
+ color: #fff;
+ border: none;
+ background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+ border-radius: 10px;
+}
+
+main .right-section{
+ padding-right: 70px;
+}
+
+main .left-section{
+ padding-left: 100px;
+ height: 200%;
+}
+
+.left-section h2{
+ font-size: 20px;
+ text-transform: capitalize;
+ font-weight: lighter;
+ color: #242424;
+ margin-top: -100px;
+}
+.left-section {
+    height: 200%;
+}
+
+.left-section h1{
+ font-size: 55px;
+ text-transform: capitalize;
+ font-weight: 700;
+ margin: 15px 0;
+}
+
+.left-section p{
+ margin-bottom: 20px;
+ font-size: 25px;
+ color: var(--black);
+ padding: 10px 5px 0 0;
+ color:#0070fa;
+ height: 120px;
+
+}
+
+.left-section button{
+ padding: 15px 45px;
+ text-align: center;
+ font-size: 14px;
+ color: #fff;
+ border: none;
+ background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+ border-radius: 10px;
+ margin-top: 250px;
+
+}
+.left-section button a{
+    color: white;
+}
+.left-section button a:hover{
+    transition: 2s;
+    color:antiquewhite;
+    background-color: #0070fa;
+}
+
+.icons-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.icons-container .icons{
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .7rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.icons-container .icons i{
+    font-size: 4.5rem;
+    color: rgb(56 189 248);
+    padding-bottom: .7rem;
+}
+.icons-container .icons h3{
+    font-size: 4.5rem;
+    color: black;
+    padding: .5rem;
+    text-shadow: 2px brown;
+}
+.icons-container .icons p{
+    font-size: 2.5rem;
+    color:rgb(56 189 248);
+    padding: .5rem;
+}
+
+
+
+.services .box-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+}
+.services .box-container .box{
+    background: #fff;
+border-radius: .3rem;
+width: 80%;
+height: 80%;
+border: var(--border);
+padding: 2.5rem;
+}
+.services .box-container .box i{
+    color:rgb(56 189 248);
+    font-size: 3rem;
+}
+.services .box-container .box h3{
+    color: black;
+    font-size: 2.0rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 2 rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 3.0rem;
+    left: .4rem;
+}
+.heading span{
+color:rgb(56 189 248);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.5rem;
+    padding-left: 1rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color: rgb(56 189 248);
+    cursor: pointer;
+    font-size: 1.7rem;
+
+}
+.btn span{
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+background: #fff;
+margin-left: .5rem;
+}
+
+.btn:hover{
+background-color: rgb(56 189 248);
+color:#ffff ;
+transition: 2s;
+}
+.services .box-container .box p{
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+ 
+}
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+.hospital .card h2{
+    margin-top: 10px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 2px;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  hr{
+    padding: 2px;
+    color: aliceblue;
+  }
+  
+
+</style>
+<body>
+<!--Navbar section-->
+
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="logout.css">
+
+    <!-- font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Serif+Pro&display=swap"
+          rel="stylesheet" />
+        
+        <link rel="shortcut icon" href="fevicon icon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        </head>
+        
+        <body>
+          <!-- navigation -->
+          <nav>
+            <a href="#home"><img src="creop.png" alt="logo.png" /></a>
+            <div class="nav-menu">
+              <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/schemes">schemes</a></li>
+                      <li><a href="/prescription">Your Data</a></li>
+                          <li><a href="/appointment">Appointment</a></li>
+                <li id="logOut"><a href="/home">Log Out</a></li>
+                
+        
+              </ul>
+            </div>
+          </nav>
+          <!-- side navigation -->
+          <div id="sideNav">
+            <nav>
+              <h1>HI
+              </h1>
+              <ul>
+                <li><a href="/">Home</a></li>
+                  <li><a href="/schemes">schemes</a></li>
+                  <li><a href="/prescription">Your Data</a></li>
+                  
+                <li id="logOut"><a href="/home">Log Out</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div id="nav-bar">
+            <i class="fa-solid fa-bars" id="menu-bar"></i>
+          </div>
+
+
+
+
+<header>
+ <div class="mainheader">
+  <div class="logo">
+   
+  </div>
+
+  
+
+  <div class="menubtn">
+   <button> HelpLine</button>
+  </div>
+ </div>
+
+
+ <main>
+  <section class="left-sec">
+   <h2> Welcome to the Medistop </h2>
+   <h1>  one stop for all medineeds</h1>
+   <p>We are here for your care 24/7. Any help just call us.</p>
+   <button>
+     Make an appointment
+   </button>
+  </section>
+
+  <section class="right-sec">
+   <figure>
+    
+    <img src="Medicine.gif">
+   </figure>
+  </section>
+ </main>
+</header>
+
+<!--icons section started -->
+<section class="icons">
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fa-solid fa-user-doctor"></i>
+        <h3>140+</h3>
+        <p>Doctor at work</p>
+    </div>
+
+    <div class="icons">
+        <i class="fa-solid fa-hospital"></i>
+        <h3>140+</h3>
+        <p>Hospitals connected</p>
+    </div>
+    <div class="icons">
+        <i class="fa fa-users"></i>
+        <h3>1400+</h3>
+        <p>Satisified Patients</p>
+    </div>
+</section>   
+</section>
+
+<!--services section started -->
+<section class="services" id="services">
+    <h1 class="heading">Our <span>SERVICES</span></h1>
+<div class="box-container">
+    <div class="box"> 
+        <i class="fas fa-notes-medical"></i>
+        <h3>Appointement Facility</h3> 
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, maxime.</p>
+        <a href="#" class="btn">Learn <span class="fas fa-chevron-right"></span></a> 
+    </div>
+
+    <div class="box">  
+        <i class="fas fa-notes-medical"></i>
+        <h3>Appointement Facility</h3> 
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, maxime.</p>
+        <a href="#" class="btn">Learn <span class="fas fa-chevron-right"></span></a> 
+    </div>
+
+    <div class="box">  
+        <i class="fas fa-notes-medical"></i>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, maxime.</p>
+        <a href="#" class="btn">Learn <span class="fas fa-chevron-right"></span></a> 
+    </div>
+
+    <div class="box">  
+        <i class="fas fa-notes-medical"></i>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, maxime.</p>
+        <a href="#" class="btn">Learn <span class="fas fa-chevron-right"></span></a> 
+    </div>
+</div>
+</section>
+<br><br><hr>
+<!--about us section started-->
+<section class="about">
+    <div class="box-container">
+        <h1 class="heading"> <span>About Us</span></h1>
+        <br><br><br>
+
+        <main>
+            <section class="left-section">
+             <h2> Welcome to the Medistop </h2>
+             <h1> We are helping people </h1>
+             <br>
+             <p>We are providing help to all the people who require help Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempora reiciendis consequatur, omnis aperiam laborum, nisi maxime dolores numquam aut suscipit eum beatae magnam? Dolore, ipsam expedita, consequatur beatae reprehenderit eaque totam dignissimos voluptatibus cumque, perspiciatis architecto. Asperiores facere incidunt, itaque repellat eius sit error beatae distinctio dolor excepturi delectus!</p>
+             <button class="btn" id="btn"> <a href="#">  Learn more</a>
+          
+             </button>
+            </section>
+          
+            <section class="right-sec">
+             <figure>
+              
+              <img src="about.gif">
+             </figure>
+            </section>
+           </main>
+
+    </div>
+</section>
+<br><br>
+<hr>
+
+
+<!-- COnnected Hospitals page -->
+<section class="hospital">
+<div class="box-container">
+    <h1 class="heading"><span> Connected Hospitals</span></h1>
+
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="sanjay.png" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Sanjay Gandhi Hospital </h2>
+              <h2 style="text-align: center;"> Rewa</h2>
+           
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="birla.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+                <h2>Birla Institute of Medical </h2>
+              <h2>Satna</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="AIIMSDEL.jpg" alt="John" style="width:100%">
+            <div class="container">
+                <h2>All Indian Institute of Science </h2>
+              <h2 style="text-align: center;"> Delhi</h2>
+            </div>
+          </div>
+        </div>
+</div>
+
+
+<div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="sanjay.png" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Sanjay Gandhi Hospital Rewa </h2>
+              <h2 style="text-align: center;"> Rewa</h2>
+           
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="sanjay.png" alt="Mike" style="width:100%">
+            <div class="container">
+                <h2>Birla Institute of Medical </h2>
+              <h2 style="text-align: center;"> Satna</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="AIIMSDEL.jpg" alt="John" style="width:100%">
+            <div class="container">
+                <h2>All Indian Institute of Science </h2>
+              <h2 style="text-align: center;"> Delhi</h2>
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+</section>
+<hr>
+
+<h1 class="heading"><span>Testinomials</span></h1>
+<!--Customer reveiew-->
+<section class="gradient-custom">
+  <div class="container my-5 py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-12">
+        <div class="text-center mb-4 pb-2">
+          <i class="fas fa-quote-left fa-3x text-white"></i>
+        </div>
+
+        <div class="card">
+          <div class="card-body px-4 py-5">
+            <!-- Carousel wrapper -->
+            <div id="carouselDarkVariant" class="carousel slide carousel-dark" data-mdb-ride="carousel">
+              <!-- Indicators -->
+              <div class="carousel-indicators mb-0">
+                <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="1"
+                  aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="2"
+                  aria-label="Slide 1"></button>
+              </div>
+
+              <!-- Inner -->
+              <div class="carousel-inner pb-5">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-lg-10 col-xl-8">
+                      <div class="row">
+                        <div class="col-lg-4 d-flex justify-content-center">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                            class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
+                            height="150" />
+                        </div>
+                        <div
+                          class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                          <h4 class="mb-4">Maria Smantha - Web Developer</h4>
+                          <p class="mb-0 pb-3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            aliquam amet animi blanditiis consequatur debitis dicta
+                            distinctio, enim error eum iste libero modi nam natus
+                            perferendis possimus quasi sint sit tempora voluptatem. Est,
+                            exercitationem id ipsa ipsum laboriosam perferendis.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-lg-10 col-xl-8">
+                      <div class="row">
+                        <div class="col-lg-4 d-flex justify-content-center">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                            class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
+                            height="150" />
+                        </div>
+                        <div
+                          class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                          <h4 class="mb-4">Lisa Cudrow - Graphic Designer</h4>
+                          <p class="mb-0 pb-3">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam, eaque
+                            ipsa quae ab illo inventore veritatis et quasi architecto
+                            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                            quia voluptas sit aspernatur.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-lg-10 col-xl-8">
+                      <div class="row">
+                        <div class="col-lg-4 d-flex justify-content-center">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                            class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
+                            height="150" />
+                        </div>
+                        <div
+                          class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                          <h4 class="mb-4">John Smith - Marketing Specialist</h4>
+                          <p class="mb-0 pb-3">
+                            At vero eos et accusamus et iusto odio dignissimos qui
+                            blanditiis praesentium voluptatum deleniti atque corrupti quos
+                            dolores et quas molestias excepturi sint occaecati cupiditate
+                            non provident, similique sunt in culpa qui officia mollitia
+                            animi id laborum et dolorum fuga.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Inner -->
+
+              <!-- Controls -->
+              <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant"
+                data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant"
+                data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- Carousel wrapper -->
+          </div>
+        </div>
+
+        <div class="text-center mt-4 pt-2">
+          <i class="fas fa-quote-right fa-3x text-white"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Footer section-->
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
+></script>
+<script src="nav"></script>
+</body>
+</html>
