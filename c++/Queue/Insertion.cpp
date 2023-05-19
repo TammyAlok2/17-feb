@@ -11,7 +11,9 @@ class Queue {
 void Traverse (Queue * )
 
 int main(){
-//making program of inserttion of queue
-
+//making program of insertion of queue
+struct Queue q;
+q->data=10;
+q.front=-1;
     return 0;
 }
