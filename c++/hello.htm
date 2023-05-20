@@ -6,7 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .main-nav{
+        background-color: aqua;
+        margin: 10px ;
+        padding: 5px;
+    }
+    ul li a{
+text-decoration: none;
+font-size: 30px;
+color: brown;
+top: 0;
+left: 0;
+    }
+    ul li a:hover{
+        transition: 1.4s;
+        font-size: 35px;
+        text-shadow: 2px black;
+    }
+    ul{
+        
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+</style>
 <body>
-    this is me alok tamrakaar
+<header>
+    <nav>
+        <div class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+           <li><a href="#">Setting</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 </body>
 </html>
