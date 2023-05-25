@@ -44,7 +44,9 @@ third->data= 23;
 third->next= NULL;                  
 
 Traverse(head);
+Insertion(&head,20);
 Insertion(&head,12);
+Insertion(&head,290);
 cout<<"after insertion"<<endl;
 Traverse(head);
 
