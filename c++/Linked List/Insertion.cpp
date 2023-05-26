@@ -11,14 +11,14 @@ class Node {
 
 void Traverse (Node *head ){
     while(head!=NULL){
-cout<<"the element is "<<head->data <<endl;
+cout<<"the element is    "<<head->data <<endl;
 head=head->next;
     }
 }
 
 void Insertion(Node **head,int value){
     //make the new node 
-    Node * temp = new Node();
+     Node * temp = new Node();
     temp->data=value;
     //connect with the previous first node 
     temp->next= *head;
