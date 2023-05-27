@@ -41,6 +41,7 @@ second->next = third;
 
 
 third->data= 23;
+
 third->next= NULL;                  
 
 Traverse(head);
