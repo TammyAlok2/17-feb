@@ -37,6 +37,19 @@ void InsertLast(struct Node *head, int value)
     temp->next = NULL;
     head = temp;
 }
+void deleteLast(struct Node *head){
+    if(head==NULL)
+    {
+        printf("Linked list is empty");
+    }
+    else
+    {
+        struct Node *temp = head;
+        head = head->next;
+        head->prev=NULL;
+        free(temp);
+    }
+}
 
 int main()
 {
@@ -62,6 +75,8 @@ int main()
     InsertBegin(&first, 100);
     InsertBegin(&first, 80);
     InsertLast(&first, 90);
+    deleteLast(first);
+ deleteLast(first);
     printf("\n after insertion begin \n");
     Traverse(first);
     return 0;
