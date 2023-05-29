@@ -45,13 +45,12 @@ void insertBegin(struct Node**head,int value){
 }
 void deleteBegin(struct Node *head){
     struct Node *p= head;
-    struct Node *q;
     while(p->next!=head){
         p=p->next;
     }
-    q=p->next;
     p->next=head->next;
-    free(q);
+    
+    head = p->next;
 }
 void deleteLast(struct Node *head){
     struct Node*p = head;
@@ -61,6 +60,7 @@ void deleteLast(struct Node *head){
         p=p->next;
     }
     p->next = head;
+
 free(q);
 }
 int main(){
