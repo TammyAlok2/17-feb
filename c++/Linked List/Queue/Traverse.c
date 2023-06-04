@@ -42,7 +42,7 @@ q->size = 5;
 q->front = q->rear = -1;
 q->arr=(int *) malloc(sizeof(int));
 Enque(q,10);
-Enque(q,12);
+Enque(q,12);jjhj
 m
 
 
