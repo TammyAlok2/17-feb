@@ -9,6 +9,14 @@ struct node
      struct node* right;
     /* data */
 };
+void preorder(struct node *root)
+{
+    if(root!=NULL){
+        printf("%d ",root->data);
+        preorder(root->left);
+        preorder(root->right);
+    }
+}
 struct node* createNode(int data){
     struct node *n; // creating a node pointer
     n = (struct node *) malloc(sizeof(struct node)); // Allocating memory in the heap
@@ -18,6 +26,21 @@ struct node* createNode(int data){
     return n; // Finally returning the created node
 }
 
+void postOrder(struct node* root){
+    if(root!=NULL){
+        postOrder(root->left);
+        postOrder(root->right);
+        printf("%d ",root->data);
+    }
+}
+
+void inOrder (struct node* root){
+    if(root!=NULL){
+        inOrder(root->left);
+        printf("%d ",root->data);
+        inOrder(root->right);
+    }
+}
 
 
 int main(){
@@ -34,7 +57,12 @@ p1->left=p3;
 p1->right = p4;
 p2->left= p5;
 
-
+printf("Preorder traversal \n ");
+preorder(p);
+printf("\n postOrder Traversal \n ");
+postOrder(p);
+printf("\n Inorder traversal \n ");
+inOrder(p);
 
     return 0;
 }
