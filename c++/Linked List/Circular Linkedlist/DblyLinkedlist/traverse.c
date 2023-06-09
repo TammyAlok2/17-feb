@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node
+struct node
 {
     int data;
-    struct Node *prev;
-    struct Node *next;
+    struct node *prev;
+    struct node *next;
 };
-void Traverse(struct Node *head)
+void Traverse(struct node *head)
 {
     while (head != NULL)
     {
@@ -15,17 +15,17 @@ void Traverse(struct Node *head)
         head = head->next;
     }
 }
-void InsertBegin(struct Node **head, int value)
+void InsertBegin(struct node **head, int value)
 {
-    struct Node *temp = (struct Node *)malloc(sizeof(struct Node));
+    struct node *temp = (struct node *)malloc(sizeof(struct node));
     temp->prev = NULL;
     temp->data = value;
     temp->next = *head;
     *head = temp;
 }
-void InsertLast(struct Node *head, int value)
+void InsertLast(struct node *head, int value)
 {
-    struct Node *temp = (struct Node *)malloc(sizeof(struct Node));
+    struct node *temp = (struct node *)malloc(sizeof(struct node));
     temp->prev = NULL;
     temp->data = value;
     while (head->next != NULL)
@@ -37,14 +37,14 @@ void InsertLast(struct Node *head, int value)
     temp->next = NULL;
     head = temp;
 }
-void deleteLast(struct Node *head){
+void deleteLast(struct node *head){
     if(head==NULL)
     {
         printf("Linked list is empty");
     }
     else
     {
-        struct Node *temp = head;
+        struct node *temp = head;
         head = head->next;
         head->prev=NULL;
         free(temp);
@@ -53,12 +53,12 @@ void deleteLast(struct Node *head){
 
 int main()
 {
-    struct Node *first;
-    struct Node *second;
-    struct Node *third;
-    second = (struct Node *)malloc(sizeof(struct Node));
-    third = (struct Node *)malloc(sizeof(struct Node));
-    first = (struct Node *)malloc(sizeof(struct Node));
+    struct node *first;
+    struct node *second;
+    struct node *third;
+    second = (struct node *)malloc(sizeof(struct node));
+    third = (struct node *)malloc(sizeof(struct node));
+    first = (struct node *)malloc(sizeof(struct node));
     first->data = 10;
     first->prev = NULL;
     first->next = second;

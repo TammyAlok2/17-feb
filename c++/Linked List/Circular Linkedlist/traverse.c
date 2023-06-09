@@ -1,12 +1,12 @@
 #include<stdio.h>
 #include <stdlib.h>
 
-struct Node {
+struct node {
     int data;
-    struct Node *next;
+    struct node *next;
 };
-void Traverse(struct Node *head){
-    struct Node *temp = head;
+void Traverse(struct node *head){
+    struct node *temp = head;
     do
     {
         /* code */
@@ -16,10 +16,10 @@ void Traverse(struct Node *head){
     
 }
 
-void insertLast(struct Node**head,int value){
-    struct Node *ptr = *head;
-    struct Node *temp ;
-    temp = (struct Node *) malloc(sizeof(struct Node));
+void insertLast(struct node**head,int value){
+    struct node *ptr = *head;
+    struct node *temp ;
+    temp = (struct node *) malloc(sizeof(struct node));
     temp->data = value;
     temp->next= NULL;
     while(ptr->next!=*head){
@@ -29,10 +29,10 @@ void insertLast(struct Node**head,int value){
     temp->next= *head;
     
 }
-void insertBegin(struct Node**head,int value){
-    struct Node *ptr = *head;
-    struct Node *temp ;
-    temp = (struct Node *) malloc(sizeof(struct Node));
+void insertBegin(struct node**head,int value){
+    struct node *ptr = *head;
+    struct node *temp ;
+    temp = (struct node *) malloc(sizeof(struct node));
     temp->data = value;
     temp->next= NULL;
     while(ptr->next!=*head){
@@ -43,8 +43,8 @@ void insertBegin(struct Node**head,int value){
     *head=temp;
     
 }
-void deleteBegin(struct Node *head){
-    struct Node *p= head;
+void deleteBegin(struct node *head){
+    struct node *p= head;
     while(p->next!=head){
         p=p->next;
     }
@@ -52,9 +52,9 @@ void deleteBegin(struct Node *head){
     
     head = p->next;
 }
-void deleteLast(struct Node *head){
-    struct Node*p = head;
- struct Node *q = head->next;   
+void deleteLast(struct node *head){
+    struct node*p = head;
+ struct node *q = head->next;   
     while(q->next!= head){
         q=q->next;
         p=p->next;
@@ -65,13 +65,13 @@ free(q);
 }
 int main(){
     
-struct Node *first;
-first= (struct Node *) malloc(sizeof(struct Node));
-struct Node *second ;
- second = (struct Node *) malloc(sizeof(struct Node));
- struct Node *third;
- third = (struct Node *) malloc(sizeof(struct Node));
-struct Node *head = first;
+struct node *first;
+first= (struct node *) malloc(sizeof(struct node));
+struct node *second ;
+ second = (struct node *) malloc(sizeof(struct node));
+ struct node *third;
+ third = (struct node *) malloc(sizeof(struct node));
+struct node *head = first;
  first->data= 10;
  first->next = second;
  second->data=20;
