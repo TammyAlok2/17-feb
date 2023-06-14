@@ -6,4 +6,5 @@ using namespace std;
     int a,b;
     private:
     void getData(int x)
+    this is me alokt tamrakar;
  }
