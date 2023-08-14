@@ -1,28 +1,30 @@
 import React from 'react'
-
+import products from './data'
+import './product.css'
+import { Link } from 'react-router-dom'
 const Product = () => {
-    const [items,setitems]=useState([]);
+  return (
+    <>
+     <h2>Products</h2>
+    <div className="container">
+      {
 
-    const getItems = async()=>{
-      const response =  await fetch ("https://fakestoreapi.com/products");
-      setitems(await response.json());
-    }
-    useEffect(()=>{
-      getItems();
-    })
-    
-    return (
-      <>
-      <h2>Product Cards</h2>
-  {
-    items.map((currElem)=>{
-      return (
-        <div className='name'>{currElem.name}</div>
-      )
-    })
-  }
-      </>
-    )
+        
+        products.map((item)=>{
+          return (
+            <>
+            <img src={item.photo} alt="hello" />
+            <div className="name">{item.name}</div>
+            <Link to={`/products/${item.id}`}>More </Link>
+
+            </>
+          )
+        })
+      }
+     
+    </div>
+    </>
+  )
 }
 
 export default Product

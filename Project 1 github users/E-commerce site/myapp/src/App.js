@@ -1,9 +1,17 @@
 import React from 'react'
-import Navbar from'./Navbar'
+import Products from './Product'
+import SingleProduct from './SingleProduct'
+import { BrowserRouter ,Routes,Route } from 'react-router-dom'
+
 const App = () => {
   return (
     <>
-      <Navbar/>
+      <BrowserRouter>
+      <Routes>
+      <Route index element={<Products/>} />
+            <Route path='products/:productId' element={<SingleProduct />} />
+            </Routes>
+      </BrowserRouter>
     </>
   )
 }
